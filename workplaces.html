@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places I've Worked</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .work-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .work-item img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .work-item h3 {
+            margin: 10px 0;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Places I've Worked</h1>
+        <div class="work-grid">
+            <div class="work-item">
+                <img src="company1-logo.png" alt="Company 1 Logo">
+                <h3>Company Name 1</h3>
+                <p>Short description of the company and your role.</p>
+            </div>
+            <div class="work-item">
+                <img src="company2-logo.png" alt="Company 2 Logo">
+                <h3>Company Name 2</h3>
+                <p>Short description of the company and your role.</p>
+            </div>
+            <div class="work-item">
+                <img src="company3-logo.png" alt="Company 3 Logo">
+                <h3>Company Name 3</h3>
+                <p>Short description of the company and your role.</p>
+            </div>
+        </div>
+
+        <a href="javascript:history.back()" class="back-button">Go Back</a>
+    </div>
+
+</body>
+</html>
