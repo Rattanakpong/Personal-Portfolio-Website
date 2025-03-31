@@ -111,21 +111,21 @@
     </section><!-- /About Section -->
 
     <!-- Stats Section -->
- <section id="stats" class="stats section">
+<section id="stats" class="stats section">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row gy-4">
       <div class="col-lg-3 col-md-6">
-        <div class="stats-item" style="pointer-events: none;">
+        <div class="stats-item text-center">
           <i class="bi bi-journal-richtext"></i>
-          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+          <div class="purecounter" data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1">15</div>
           <p><strong>Projects</strong> <span>Have done</span></p>
         </div>
       </div><!-- End Stats Item -->
       
       <div class="col-lg-3 col-md-6">
-        <div class="stats-item" style="pointer-events: none;">
+        <div class="stats-item text-center">
           <i class="bi bi-people"></i>
-          <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+          <div class="purecounter" data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1">3</div>
           <p><strong>Place</strong> <span>Have work for</span></p>
         </div>
       </div><!-- End Stats Item -->
@@ -134,17 +134,18 @@
 </section>
 
 <style>
+  /* Remove any link styling */
   .stats-item {
-    cursor: default !important;
+    cursor: default;
+    color: inherit; /* Use normal text color */
+    text-decoration: none; /* Remove any underline */
+  }
+  .stats-item:hover {
+    background-color: transparent !important; /* Remove hover effects */
   }
 </style>
             <!-- End Stats Item -->
 
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
